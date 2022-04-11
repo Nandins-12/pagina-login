@@ -1,0 +1,234 @@
+/* Global -------------------------- */
+:root {
+    --primary-dark: #1b3a4b;
+    --secondary-dark: #212f45;
+    --primary-color: #38b000;
+    --secondary-color: #144552;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../assets/background.jpg') no-repeat;
+    background-position-y: -40px;
+    max-width: 1440px;
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    color: #fff;
+}
+
+.illustration, .content h2 {
+    display: none;
+}
+
+main, footer {
+    position: absolute;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+#loadingPage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: linear-gradient(245deg, #1b3a4b, #212f45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -9;
+}
+
+#loadingPage .canvas {
+    display: flex;
+}
+
+#loadingPage .canvas div:nth-child(2) {
+    margin: 0 20px;
+}
+
+.ball-1, .ball-2, .ball-3 {
+    background: var(--primary-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.ball-1 {
+    animation: ball-jump-1 0.5s infinite alternate ease-out;
+}
+
+.ball-2 {
+    animation: ball-jump-1 0.5s infinite alternate ease-out;
+    animation-delay: 0.2s;
+}
+
+.ball-3 {
+    animation: ball-jump-1 0.5s infinite alternate ease-out;
+    animation-delay: 0.4s;
+}
+
+@keyframes ball-jump-1{
+    0% {
+        border-radius: 45%;
+        transform: translateY(0) scaleX(1.6);
+    }
+
+    100% {
+        transform: translateY(-100px) scaleX(1);
+        border-radius: 50%;
+    }
+}
+
+/* Content ----------------------------- */
+.header {
+    display: flex;
+    justify-content: end;
+    margin-top: 26px;
+}
+
+.register {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.register p {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.register i {
+    font-size: 25px;
+}
+
+.content {
+    margin-top: 58px;
+}
+
+.content h1 {
+    color: #fff;
+    font-size: 24.6px;
+}
+
+.area-login {
+    background: var(--secondary-color);
+    padding: 18px;
+    position: relative;
+    border-radius: 12px;
+    margin-top: 22px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.area-login h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.area-login input {
+    font-size: 1em;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 7px 7px 7px 40px;
+    border-radius: 4px;
+    background: var(--primary-dark);
+    background-position-x: right;
+    caret-color: #fff;
+    color: #fff;
+    font-weight: 300;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.input-group {
+    position: relative;
+    margin-top: 12px;
+}
+
+.input-group img {
+    position: absolute;
+    left: 6px;
+    top: 3px;
+}
+
+.area-login input::placeholder {
+    color: #AFAFAF;
+}
+
+.area-login .show-password {
+    margin-top: 7px;
+    text-align: end;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.area-login .show-password:hover {
+    text-decoration: underline;
+}
+
+.area-login button {
+    margin-top: 14px;
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 7px 0;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.area-login button:hover {
+    background: #2f9400;
+    transition: 0.3s ease;
+}
+
+.area-login p {
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.area-login p span {
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.area-login p span:hover {
+    color: #2f9400;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}

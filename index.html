@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Uma página teste com uma interface de login, responsivo a diferentes tamanhos de tela. Desenvolvido por Fernando Dias. ">
+        <title>Página Login</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a0ff39b37d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <main class="container">
+            <div class="header">
+                <a href="#" class="register">
+                    <i class="fa-solid fa-user-group"></i>
+                    <p>Registrar</p>
+                </a>
+            </div>
+            <div class="content">
+                <div class="column-1">
+                    <h1>Faça o login para aproveitar todos os nossos serviços!</h1>
+                    <img class="illustration" src="assets/login-image.svg" alt="Ilustração login">
+                </div>
+                <div class="column-2">
+                    <div class="area-login">
+                        <form action="#">
+                            <h3>Login</h3>
+                            <div class="input-group">
+                                <input type="email" placeholder="Digite seu email" id="email">
+                                <img src="assets/carbon_email.svg">
+                            </div>
+                            <div class="input-group">
+                                <input type="password" placeholder="Digite sua senha" id="senha">
+                                <img src="assets/arcticons_password.svg">
+                            </div>
+                            <p class="show-password">Mostrar senha</p>
+                            <button type="submit">Logar</button>
+                            <p>Ainda não possui uma conta, <span>registre-se</span> agora!</p>
+                        </form>
+                    </div>
+                    <h2>Registre-se caso ainda não possua uma conta</h2>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;Desenvolvido por Fernando Dias</p>
+        </footer>
+
+        <div id="loadingPage">
+            <div class="canvas">
+                <div class="ball-1"></div>
+                <div class="ball-2"></div>
+                <div class="ball-3"></div>
+            </div>
+        </div>
+    </body>
+</html>
