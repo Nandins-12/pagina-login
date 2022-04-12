@@ -14,9 +14,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: url('../assets/background.jpg') no-repeat;
+    background: url('../assets/background.jpg') no-repeat var(--secondary-dark);
     background-position-y: -40px;
-    max-width: 1440px;
     overflow-y: hidden;
 }
 
@@ -34,7 +33,7 @@ p {
     display: none;
 }
 
-main, footer {
+main, footer, header {
     position: absolute;
     opacity: 0;
     transition: 0.8s;
@@ -94,10 +93,10 @@ main, footer {
 }
 
 /* Content ----------------------------- */
-.header {
+header {
     display: flex;
     justify-content: end;
-    margin-top: 26px;
+    padding-top: 26px;
 }
 
 .register {
