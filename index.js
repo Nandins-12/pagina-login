@@ -11,12 +11,12 @@ window.addEventListener('load', () => {
     main.style.opacity = 1;
     main.style.position = 'initial';
     footer.style.opacity = 1;
+    footer.style.position = 'initial'; 
     document.body.style.overflow = 'initial';
 });
 
 window.addEventListener('resize', () => {
     window.innerWidth > 1439 ? document.body.style.backgroundSize = 'cover': document.body.style.backgroundSize = 'initial';
-    window.innerWidth < 992 ? footer.style.position = 'absolute' : footer.style.position = 'initial'; 
 });
 
 const show_password = document.querySelector('.area-login .show-password');

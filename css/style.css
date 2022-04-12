@@ -17,6 +17,9 @@ body {
     background: url('../assets/background.jpg') no-repeat var(--secondary-dark);
     background-position-y: -40px;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .container {
@@ -220,10 +223,7 @@ header {
 }
 
 footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 50px;
+    margin: auto 0 50px 0;
 }
 
 footer p {
