@@ -231,3 +231,7 @@ footer p {
     font-size: 12px;
     text-align: center;
 }
+
+footer p a {
+    color: #fff;
+}
